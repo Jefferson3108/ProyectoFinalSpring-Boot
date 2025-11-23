@@ -1,0 +1,17 @@
+services:
+  postgres_db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: Sysmcom
+      POSTGRES_PASSWORD: 310806
+      POSTGRES_DB: sgmdb
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
+
+
+
